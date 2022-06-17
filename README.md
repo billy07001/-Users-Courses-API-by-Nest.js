@@ -71,3 +71,20 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+    
+## URL
+1. (POST) http://localhost:3000/user  Body = { name , email }
+2. (GET) http://localhost:3000/user/1
+3. (GET) http://localhost:3000/user?name=...&email=...
+4. (PUT) http://localhost:3000/user/1 Body = { name , email }
+5. (DELETE) http://localhost:3000/user/1
+6. (GET) http://localhost:3000/enrollment/courseId/1
+7. (POST) http://localhost:3000/enrollment Body = { userId , courseId , role }
+8. (DELETE) http://localhost:3000/enrollment/1
+9. (GET) http://localhost:3000/enrollment/1
+10. (GET) http://localhost:3000/enrollment/?userId=...&courseId=...&role=...
+11. (GET) http://localhost:3000/course/1
+12. (GET) http://localhost:3000/enrollment/userId/1
+
+13,14皆有用Bearer Auth token，token為'wool'    
+    
