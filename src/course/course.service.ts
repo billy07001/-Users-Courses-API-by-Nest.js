@@ -1,19 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class AppService {
-  Users = [
-    {
-        "id" : 1 ,
-        "name" : "Billy Lai",
-        "email" : "abc@billy.com"
-    },
-    {
-        "id" : 2 ,
-        "name" : "Pio Lai",
-        "email" : "cde@billy.com"
-    }
-  ]
+export class CourseService {
   Courses = [
     {
     "id": 1,
@@ -37,11 +25,7 @@ export class AppService {
     }
 ]
 
-  getUsers() {
-    return this.Users;
-  }
-
-  getCourses() {
-    return this.Courses;
+  getCoursebyid(id: String) {
+    return this.Courses.filter(course => course.id === Number(id));
   }
 }
